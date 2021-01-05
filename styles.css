@@ -37,16 +37,18 @@
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Original.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("banner.jpg");
 
   display: table;
-  height: 100%;
+  height: 1034px;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
-  background-size: contain;
+  background-size: cover, cover;
+  overflow: hidden;
 }
+
 
 .headerTxt {
   font-family: "Roboto Condensed", serif;
@@ -54,6 +56,7 @@
   color: white;
   text-align: center;
   padding: 100px 25px 50px;
+  margin-bottom: 100px;
 }
 
 .headerTxt2 {
@@ -61,7 +64,6 @@
   font-size: 30px;
   color: white;
   text-align: center;
-  padding-bottom: 200px;
   padding-left: 50px;
   padding-right: 50px;
 }
