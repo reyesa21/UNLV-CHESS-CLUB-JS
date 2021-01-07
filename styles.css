@@ -54,7 +54,7 @@ html {
   overflow: hidden;
 }
 
-.button {
+.banner__button{
   background-color:  #B10202;
   border: none;
   color: white;
@@ -73,7 +73,7 @@ html {
   background-color: darkred;
   transition-duration: 250ms;
 }
-.headerTxt {
+.banner__header {
   font-family: "Roboto Condensed", serif;
   font-size: 45px;
   color: white;
@@ -82,7 +82,7 @@ html {
   margin-bottom: 100px;
 }
 
-.headerTxt2 {
+.banner__subtext {
   font-family: 'Roboto Condensed', serif;
   font-size: 30px;
   color: white;
@@ -100,13 +100,13 @@ html {
 .contact {
   background-color: whitesmoke;
 }
-.bigText {
+.section__header {
   font-family: "Roboto Condensed", serif;
   font-size: 32px;
   text-align: center;
 }
 
-.subText {
+.section__subtext {
   font-family: "Roboto Condensed", serif;
   font-size: 18px;
   text-align: center;
