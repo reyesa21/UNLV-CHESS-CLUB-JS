@@ -97,7 +97,20 @@ html {
   padding: 10vmax 0;
 }
 
-.contact {
+.events {
+  box-sizing: border-box;
+  display: block;
+  padding: 10vmax 0;
+  background-color: whitesmoke;
+}
+
+.puzzle iframe {
+display: block;
+text-align: center;
+width: 500px;
+height: 500px;
+}
+  .contact {
   background-color: whitesmoke;
 }
 .section__header {
@@ -121,7 +134,7 @@ html {
     }
 
     .banner{
-      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("mobilebanner.jpg");
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("banner2.png");
 
     }
   }
