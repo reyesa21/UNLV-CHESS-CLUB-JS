@@ -67,6 +67,8 @@ html {
   display: block;
   font-size: 16px;
   width: 200px;
+  border-radius: 5px;
+
 }
 
 .button:hover{
@@ -104,11 +106,8 @@ html {
   background-color: whitesmoke;
 }
 
-.puzzle iframe {
-display: block;
+.puzzle {
 text-align: center;
-width: 500px;
-height: 500px;
 }
   .contact {
   background-color: whitesmoke;
@@ -182,6 +181,13 @@ height: 500px;
     color: #c4302b;
   }
 
+  .fa-twitch {
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #6441a5;
+  }
   .bio {
     display: block;
     padding: 30px;
@@ -209,3 +215,70 @@ height: 500px;
     font-weight:500;
     font-size: 17px;
   }
+
+  .sign-up{
+    background-color: whitesmoke;
+    display: none;
+    border: none;
+    margin: auto;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    width: 90%;
+    height: 400px;
+    transform: translateY(-500px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+  border-radius: 5px;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+  }
+
+  input[type=text] {
+      margin-top: 10px;
+      padding:5px; 
+      border:2px solid #ccc; 
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+  }
+  
+  input[type=email]{
+    margin-top: 10px;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+  input[type=text]:focus{
+      border-color:#333;
+  }
+
+  input[type=email]:focus{
+    border-color:#333;
+}
+
+  input[type=submit] {
+    background-color:  #B10202;
+    border: none;
+    color: white;
+    margin: auto;
+    transform: translateY(90px);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    width: 200px;
+
+    border-radius: 5px;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}

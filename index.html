@@ -31,16 +31,17 @@
  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <div class="topnav" id="myTopnav">
+ <nav class="topnav" id="myTopnav">
    <a href="#home" class="active">Chess Club UNLV</a>
    <a href="#about">About</a>
    <a href="members.html">Members</a>
    <a href="#contact">Contact</a>
-   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+   <a href="javascript:void(0);" class="icon" onclick="nav()">
      <i class="fa fa-bars"></i>
    </a>
- </div> 
- <section class="banner">
+  </nav> 
+
+ <header class="banner">
     <h1 class="banner__header" id="home"> Welcome to UNLV's Chess Club web page!</h1>
     <p class="banner__subtext">Hello! We are the Chess Club at UNLV! Currently, 
       we host tournaments online and help players of all skill levels hone their chess skills!
@@ -49,12 +50,22 @@
     <p class="banner__subtext"> Sunday: Beginner lessons @ 5pm</p>
     <p class="banner__subtext"> Monday: Tactic Lessons @ 7pm</p>
     <p class="banner__subtext"> Wednesday: Chessable Study @ 8pm</p>
-    <a  href="#contact">
-    <p class="banner__button">JOIN </p>
-   </a>
- </section>
+    <p class="banner__button" onclick="popUpForm()">Join </p>
  
- <div class="about" id ="about">
+    <div class="sign-up" id="signUp">
+      <form action="send-email.php" method="post">
+        <label for="name">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">UNLV Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <p class="banner__button" onclick="popUpForm()">Cancel </p>
+    </div>
+ 
+  </header>
+ 
+ <section class="about" id ="about">
    <h1 class="section__header">About Us</h1>
    <p class="section__subtext">Hello! We are the Chess CLub at UNLV! Currently, 
      we host tournaments online and help players of all skill levels hone their chess skills!
@@ -63,32 +74,33 @@
    <p class="section__subtext"> Sunday: Beginner lessons @ 5pm</p>
    <p class="section__subtext"> Monday: Tactic Lessons @ 7pm</p>
    <p class="section__subtext"> Wednesday: Chessable Study @ 8pm</p>
- </div>
+  </section>
  
- <div class="events" id ="events">
+ <section class="events" id ="events">
   <h1 class="section__header">Events</h1>
   <p class="section__subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, eveniet. Optio, officiis excepturi atque natus ad sit eaque distinctio fugit earum aperiam possimus, praesentium architecto? Veritatis voluptates nam porro corporis.
   </p>
   <img src="chess.jpeg">
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis porro aliquid ratione enim laborum inventore error ipsum iste, voluptatibus natus eos provident est ab suscipit tempore quas maxime eius? In?</p>
-</div>
+</section>
 
  
-<div class="puzzle" id ="puzzle">
-  <h1 class="section__header">Chess Puzzle</h1>
+<section class="puzzle" id ="puzzle" style="text-align: center;">
+  <h1 class="section__header">Lichess Puzzle of The Day</h1>
   <iframe src="https://lichess.org/training/frame?theme=wood&bg=dark" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0"></iframe>
-</div>
+</section>
 
-<div class="contact" id="contact">
+<section class="contact" id="contact">
   &nbsp;  
 
   <div class="section__header">Contact Us: </div>
   <div class="section__subtext">EMAIL: chess@chess.unlv</div>
     <div class="links">
       <a href="#" class="fa fa-facebook fa-3x"></a>
-      <a href="#" class="fa fa-youtube fa-3x"></a>
+      <a href="https://www.youtube.com/channel/UC6_7PgKwiURfgAJzz3NYALA" class="fa fa-youtube fa-3x"></a>
+      <a href="https://www.twitch.tv/unlvchess" class="fa fa-twitch fa-3x"></a>
     </div>
 </div>
-</div>
+</section>
 </body>
 </html>
