@@ -156,11 +156,13 @@ overflow:auto;
 
     .banner{
       background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("mobilebanner.jpg.png");
+      background-color: #094375;
       display: table;
       height: 870px;
       width: 100%;
+      background-attachment:unset;
       background-position: center;
-      background-repeat: repeat;
+      background-repeat: no-repeat;
       background-size: contain;
       overflow: hidden;
     }
