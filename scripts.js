@@ -15,7 +15,7 @@ function popUpForm(){
     if (x.style.display === "block") {
       x.style.display = "none";
       dim.style.display = "none";
-      body.style.overflow = "unset";
+      body.style.overflow = "scroll";
     } else {
       x.style.display = "block";
       dim.style.display = "block";
