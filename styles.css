@@ -87,6 +87,7 @@ html {
   text-align: center;
   padding: 100px 25px 50px;
   margin-bottom: 100px;
+  font-weight: 100;
 }
 
 .banner__subtext {
@@ -94,8 +95,9 @@ html {
   font-size: 30px;
   color: white;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-weight: 300;
 }
 
 .about {
@@ -122,26 +124,29 @@ padding: 2vmax 0;
 overflow:auto;
 }
   .contact {
-  background-color: #3B5998;
-
-}
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 23%, rgba(18,17,17,1) 55%, rgba(89,54,54,1) 100%);
+  }
 .section__header {
   font-family: "Roboto Condensed", serif;
   font-size: 32px;
   text-align: center;
   margin-bottom: 2vmax;
-
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 300;
 }
 
 .section__subtext {
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto Condensed", Arial, serif;
   font-size: 20px;
   margin-right: 10%;
   margin-left: 10%;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .section__subtext-alternate {
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto Condensed", Arial, serif;
   font-size: 20px;
   margin-left: 10%;
   margin-right: 10%;
@@ -186,7 +191,7 @@ overflow:auto;
   } 
 
   .links {
-    text-align: center;
+    text-align: right;
   }
 
 
@@ -200,7 +205,7 @@ overflow:auto;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px 5px 2px;
+    margin: 0px 2px 5px 0px;
     color: white;
   }
   
@@ -222,11 +227,12 @@ overflow:auto;
   .bio {
     display: block;
     padding: 30px;
-    background: linear-gradient(180deg,whitesmoke 0%, antiquewhite 100%);
+    background: linear-gradient(180deg,whitesmoke 0%, #e9ebec 100%);
     width: 90%;
     margin-left: 5%;
     margin-top: 2vmin;
     min-height: 35vmin;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   .bio img{
     height: 20vmin;
@@ -249,7 +255,6 @@ overflow:auto;
 
   .sign-up{
     background-color: whitesmoke;
-    display: none;
     border: none;
     margin: auto;
     padding: 15px 32px;
@@ -259,13 +264,15 @@ overflow:auto;
     font-size: 16px;
     width: 300px;
     height: 400px;
-    transform: translateY(-500px);
+    transform: translate(-50%, -50%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
-  border-radius: 5px;
-  -webkit-animation: fadeIn 0.5s;
-  animation: fadeIn 0.5s;
-  z-index: 1001;
-    position: relative;
+    border-radius: 5px;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+    z-index: 1001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
   }
 
 
@@ -393,4 +400,23 @@ fieldset{
     height:66.66px; 
   }
 
+}
+
+
+
+#more {
+  display: none;
+}
+#readMoreBtn{
+  display: block;
+  border-style: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#readMoreBtn:hover{
+  color: #B10202;
 }
