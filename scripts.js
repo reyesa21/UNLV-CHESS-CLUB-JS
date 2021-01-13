@@ -11,7 +11,7 @@ function popUpForm(){
 
     var x = document.getElementById("signUp");
     var dim = document.getElementById("dimmer");
-
+  
     if (x.style.display === "block") {
       x.style.display = "none";
       dim.style.display = "none";
