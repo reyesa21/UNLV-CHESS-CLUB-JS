@@ -150,7 +150,6 @@ overflow:auto;
   font-size: 20px;
   margin-right: 10%;
   margin-left: 10%;
-  line-height: 27px;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -381,16 +380,16 @@ fieldset{
 }
 
 .section__image{
-  width: 700px; 
-  height:400px; 
+  width: 600px; 
+  height:300px; 
   float: left;
   margin-left: 10%;
   margin-right: 5%;
 }
 
 .section__image-alternate{
-  width: 700px; 
-  height:400px; 
+  width: 600px; 
+  height: 300px; 
   float: right;
   margin-left: 5%;
   margin-right: 10%;
@@ -440,3 +439,4 @@ fieldset{
 #readMoreBtn:hover{
   color: #B10202;
 }
+
