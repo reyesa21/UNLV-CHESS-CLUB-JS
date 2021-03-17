@@ -256,7 +256,6 @@ overflow:auto;
     height: 20vmin;
     width: 20vmin;
     float: left;
-    box-shadow: 5px 5px 5px grey;
   }
   .bio__text{
     margin-top: 5vmin;
