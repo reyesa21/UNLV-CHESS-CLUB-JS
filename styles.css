@@ -8,13 +8,15 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .topnav {
     background: linear-gradient(90deg,#c00000 0%, #B10202 100%);
     overflow: hidden;
     position: inherit;
     top: 0;
     z-index: 1003;
-}
+
+  }
 
 .topnav a {
     float: left;
@@ -64,8 +66,6 @@ html {
 }
 
 .banner__button{
-  background-color:  #B10202;
-  border: none;
   color: white;
   margin: auto;
   margin-top: 100px;
@@ -78,10 +78,15 @@ html {
   width: 200px;
   border-radius: 5px;
   cursor:pointer;
+  outline-width: 0.1ch;
+  outline-style: solid;
+  outline-color: white;
 }
 
 .banner__button:hover{
-  background-color: darkred;
+  background-color: white;
+  color: black;
+  transition-duration: 250ms;
 }
 
 .banner__button:active{
@@ -91,11 +96,11 @@ html {
 
 .banner__header {
   font-family: "Roboto Condensed", serif;
-  font-size: 45px;
+  font-size: 55px;
   color: white;
   text-align: center;
   padding: 100px 25px 50px;
-  margin-bottom: 100px;
+  margin-top: 15%;
   font-weight: 100;
 }
 
@@ -107,6 +112,8 @@ html {
   padding-left: 50px;
   padding-right: 50px;
   font-weight: 300;
+  line-height: 150%;
+
 }
 
 .about {
@@ -152,6 +159,8 @@ overflow:auto;
   margin-right: 10%;
   margin-left: 10%;
   color: rgba(0, 0, 0, 0.87);
+  line-height: 150%;
+
 }
 
 .section__subtext-alternate {
@@ -159,6 +168,8 @@ overflow:auto;
   font-size: 20px;
   margin-left: 10%;
   margin-right: 10%;
+  line-height: 150%;
+
 }
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
  @media screen and (max-width: 640px) {
@@ -274,7 +285,6 @@ overflow:auto;
     background-color: whitesmoke;
     border: none;
     margin: auto;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: none;
@@ -292,6 +302,37 @@ overflow:auto;
     left: 50%;
   }
 
+  .about__subtext{
+    font-family: "Roboto Condensed", Arial, serif;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 5% 30%;
+
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .sign-button{
+    color: black;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 5px;
+    cursor:pointer;
+    outline-width: 0.1ch;
+    outline-style: solid;
+    outline-color: black;
+  }
+  
+  .sign-button:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 250ms;
+  }
 
   input {
       margin-top: 10px;
@@ -309,9 +350,8 @@ overflow:auto;
 
 
   .submit-button {
-    background-color:  #B10202;
     border: none;
-    color: white;
+    color: black;
     margin: auto;
     transform: translateY(30px);
     padding: 15px 32px;
@@ -323,11 +363,16 @@ overflow:auto;
     z-index: 1002;
     border-radius: 5px;
   cursor:pointer;
+  outline-width: 0.1ch;
+  outline-style: solid;
+  outline-color: black;
 
   }
 
   .submit-button:hover{
-    background-color: darkred;    
+    background-color: black;
+    color: white;
+    transition-duration: 250ms;  
   }
 
   .submit-button:active{
@@ -406,6 +451,8 @@ fieldset{
     width: 233.33px; 
     height:133.33px; 
   }
+
+ 
 }
 
 @media screen and (max-width: 640px) {
@@ -418,7 +465,9 @@ fieldset{
     width: 116.66px; 
     height:66.66px; 
   }
-
+  .about__subtext{
+    margin: 100px 30px;
+  }
 }
 
 
