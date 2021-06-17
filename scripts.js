@@ -1,5 +1,5 @@
 function nav() {
-    var x = document.getElementById("myTopnav");
+    let x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {
@@ -9,13 +9,13 @@ function nav() {
 
 function popUpForm(){
 
-    var x = document.getElementById("signUp");
-    var dim = document.getElementById("dimmer");
+    let x = document.getElementById("signUp");
+    let dim = document.getElementById("dimmer");
   
     if (x.style.display === "block") {
       x.style.display = "none";
       dim.style.display = "none";
-      body.style.overflow = "scroll";
+      body.style.overflow = "inherit";
     } else {
       x.style.display = "block";
       dim.style.display = "block";
@@ -25,8 +25,8 @@ function popUpForm(){
   }
 
  window.onload = () =>{
-      var div = document.getElementById("signUp");
-      var dim = document.getElementById("dimmer");
+      let div = document.getElementById("signUp");
+      let dim = document.getElementById("dimmer");
       document.onclick = (e) =>{
          if(div.style.display ==="block" && e.target.id === 'dimmer'){
             div.style.display = 'none';
@@ -39,9 +39,9 @@ function popUpForm(){
 
 
    function readMore() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("readMoreBtn");
+    let dots = document.getElementById("dots");
+    let moreText = document.getElementById("more");
+    let btnText = document.getElementById("readMoreBtn");
   
 
     if (dots.style.display === "none") {

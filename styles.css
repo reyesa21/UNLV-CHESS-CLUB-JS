@@ -140,9 +140,10 @@ padding: 2vmax 0;
 overflow:auto;
 }
   .contact {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 23%, rgba(18,17,17,1) 55%, rgba(89,54,54,1) 100%);
-    margin-top: 10px;
+    box-sizing: border-box;
+    display: block;
+    padding: 2vmax 0;
+    overflow:auto;
   }
 .section__header {
   font-family: "Roboto Condensed", serif;
@@ -225,32 +226,30 @@ overflow:auto;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 0px 2px 5px 0px;
-    color: whitesmoke;
+    margin: 0px 5px 5px 0px;
+    color: black;
   }
   
   .fa-youtube {
     padding: 10px;
-    font-size: 30px;
     text-align: center;
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
   }
 
   .fa-twitch {
     padding: 10px;
-    font-size: 30px;
     text-align: center;
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
+
   }
 
   .fa-discord {
     padding: 10px;
-    font-size: 30px;
     text-align: center;
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
   }
 
   .bio {
